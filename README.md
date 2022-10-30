@@ -8,7 +8,7 @@ JubchaiRandom jubchaiRandom = new JubchaiRandom("box1");
 ..
 // stuffs
 ..
-JubchaiRandom.random(true, null);
+String randomed = JubchaiRandom.random(true, null);
 ```
 ## Social Links
 
