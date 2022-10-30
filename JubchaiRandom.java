@@ -32,8 +32,7 @@ public class JubchaiRandom {
 
     public String random(boolean isShuffle, @Nullable List<String> excepts) {
 
-        Random ran = new Random(System.currentTimeMillis());
-        double random = ran.nextDouble();
+        double random = Math.random();
 
         double start = 0;
         List<String> shuffleArr = new ArrayList<>(this.chances.keySet());
@@ -49,7 +48,7 @@ public class JubchaiRandom {
 
             start = percentageBorder;
         }
-        return ""; // Salted
+        return "";
     }
 
 }
